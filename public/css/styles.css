@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.header-slide .carousel-item img{
+    min-height: 524px !important;
+}
+
+.header-slide{
+    position: relative;
+}
+
+.logo-home{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.logo-home img{
+    max-width: 200px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.menu_mobile {
+    display: flex;
+}
+
+#logo {
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+    margin-left: 50px;
+}
+
+.content-nav {
+    padding: 2px 0;
+    background: rgb(255,196,226);
+background: linear-gradient(90deg, rgba(255,196,226,1) 49%, rgba(255,255,255,1) 94%);
+}
+
+.menu_mobile .nav-link{
+    position: relative;
+    
+}
+
+.menu_mobile .nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 100%;
+    display: block;
+    left: 0;
+    background: rgb(255,196,226);
+    background: linear-gradient(90deg, rgba(255,196,226,1) 49%, rgba(255,255,255,1) 94%);
+}
+
+
+
+.btn button {
+    font-family: 'Roboto Flex', sans-serif;
+    padding: 10px 50px;
+    border: none;
+    background: #fff;
+    font-weight: bold;
+    color: #c90097;
+    font-size: 26px;
+    margin-left: 450px;
+    top: 10px;
+
+
+}
+
+
+#nd {
+    list-style: none;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#img-list {
+    background-size: cover;
+    height: 100%;
+    width: 70%;
+}
+
+.content_card {
+    margin: 5px;
+    cursor: pointer;
+    padding-top: 5px;
+    text-align: center;
+    transition: .4s;
+    background: white;
+    box-shadow: -1px 15px 30px -12px rgba(0, 0, 0, 0.16);
+    border-radius: 12px;
+    background: rgb(255 255 255 / 85%);
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+
+}
+
+#nd-chitiet {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+.content_card img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+    display: block;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    margin-top: 0;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(22, 8, 15, 0.612);
+    border-radius: 12px;
+}
+
+
+.content_card:hover .overlay {
+    opacity: 1;
+
+}
+
+.content_card p button {
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    background: rgb(255, 196, 226);
+    font-weight: bold;
+    padding: 7px 30px;
+    margin-top: 150px;
+    border-radius: 12px;
+    font-size: 15px;
+    color: rgba(96, 71, 71, 0.927);
+
+}
+
+
+.quytrinh {
+    padding: 30px 0;
+}
+
+
+.content-qt {
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.content-qt img {
+    width: 100%;
+}
+
+.pricelist {
+    padding: 40px 0;
+}
+
+
+.content-price {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.review {
+    display: inline-block;
+    width: 100%;
+
+
+}
+
+
+.content_review {
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+
+}
+
+
+.review-img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+
+
+
+.review-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(155, 148, 148, 0.731);
+
+}
+
+.content_review p a {
+    text-decoration: none;
+    color: black;
+}
+
+.content-footer {
+    padding-top: 50px;
+}
+
+.content-footer p a {
+    text-decoration: none;
+    color: black;
+}
+
+.content-end {
+    text-align: center;
+    font-size: 13px;
+}
+
+.end-row {
+    flex-direction: column;
+    align-items: center;
+}
+
+#homedrop {
+    font-family: 'Roboto Flex', sans-serif;
+    color: red;
+    font-size: 20px;
+    /* margin-left: 10px; */
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+#navbarDropdownMenuLink {
+    color: #c90097;
+    font-size: 18px;
+    margin-left: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 40px;
+
+}
+
+#navbarDropdownMenuLink:hover {
+    color: rgba(14, 82, 155, 0.929);
+}
+
+#img-content {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+#place {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+#list-place {
+    list-style: none;
+    margin-top: 3px;
+
+}
+
+.map {
+    text-align: center;
+}
+
+.end-footer {
+    /* color: white; */
+    padding: 13px 0;
+    margin: 0;
+    /* background: rgba(14, 82, 155, 0.929); */
+
+
+}
+
+.footer {
+    background: rgb(255, 196, 226);
+    font-family: 'Roboto Flex', sans-serif;
+
+}
+
+
+#list-tieude {
+    font-weight: bold;
+}
+
+.mobile_logo {
+    display: none;
+
+}
+
+.all_dichvu {
+    background: url(../images/bg_prod_h.png);
+    background-size: cover;
+    padding: 30px 0;
+}
+
+.btn_dichvu_index {
+    margin-bottom: 2%;
+}
+
+#item-1 {
+    list-style: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .logo_dev {
+        display: none;
+    }
+
+    .mobile_logo {
+        display: block;
+        width: 30%;
+    }
+
+    .mobile_logo img {
+        width: 100%;
+    }
+
+    .menu_mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navbarDropdownMenuLink {
+        font-size: 15px;
+    }
+
+    #homedrop {
+        font-size: 16px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .content-qt img {
+        width: 100%;
+    }
+    #img-list {
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    #homedrop {
+        font-family: 'Roboto Flex', sans-serif;
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        margin-top: 10px;
+        right: 120px;
+    }
+    .btn button{
+
+        text-align: center;
+        margin-left: 200px;
+       }
+
+}
+
+@media screen and (max-width: 769px) {
+    .content-qt img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .content_card {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+
+    .content-info {
+        display: none;
+    }
+
+    .content-end {
+        font-size: 13px;
+        font-weight: 400;
+        text-align: center
+    }
+
+    #sync1 {
+        padding: 5px 0;
+    }
+    #img-list-price{
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .header-slide .carousel-item img{
+        min-height: 200px !important;
+    }
+  .logo-home{
+    display: none;
+  }
+  #homedrop {
+    font-family: 'Roboto Flex', sans-serif;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 10px;
+    right: 120px;
+}
+.btn button{
+
+    text-align: center;
+    margin-left: 100px;
+   }
+
+   
+
+
+
+}
+
+/* carousel list review */
+.content-list-review {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+#sync1 .item {
+
+    background: url(../images/bg_prod_h.png);
+    padding: 20px 0px;
+    color: black;
+    text-align: center;
+}
+
+#hinh-item1 {
+    border-radius: 50%;
+}
+
+#btn-item1 {
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#sync2 .item {
+
+    padding: 10px 0px;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content-list-review {
+    font-family: 'Roboto Flex', sans-serif;
+
+}
+
+#name {
+    font-weight: bold;
+}
+
+
+#sync1.owl-theme {
+    position: relative;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-dots {
+    display: none;
+}
+
+#hinh-list-review {
+    width: 70%;
+    height: 100%;
+}
+
+#logo-footer {
+    background-size: cover;
+    width: 30%;
+    height: 100%;
+    margin-left: 130px;
+
+}
+#img-list-price{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
